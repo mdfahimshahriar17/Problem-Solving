@@ -14,6 +14,7 @@ while True:
 
     name_and_score.append(student)
 
-print("NO. Name Score")
-for idx in range(0, len(name_and_score)):
-    print(f"{idx+1}. {name_and_score[idx][0]} {name_and_score[idx][1]}")
+if name_and_score:
+    print("NO. Name Score")
+    for idx in range(0, len(name_and_score)):
+        print(f"{idx+1}. {name_and_score[idx][0]} {name_and_score[idx][1]}")
