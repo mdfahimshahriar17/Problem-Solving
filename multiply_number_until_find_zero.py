@@ -4,8 +4,8 @@ result = 1  #defined the variable for hold te multiplication
             #if the result = 0 the value never will multiply EX: 0*10 = 0
 
 while n:
+    result = result * n
     n = int(input("Enter number : "))
 
-    result = result * n
 
 print(result)
