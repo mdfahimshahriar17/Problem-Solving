@@ -21,3 +21,16 @@ print(find_largest_even(numbers))   # 8
 
 numbers = [1, 3, 5]
 print(find_largest_even(numbers))   # None
+
+
+
+def find_largest_even(numbers):
+    max_even = None
+
+    for num in numbers:
+        if num % 2 == 0:
+            if max_even is None or num > max_even:
+                max_even = num
+
+    return max_even
+
