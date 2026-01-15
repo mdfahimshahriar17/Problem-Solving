@@ -7,6 +7,6 @@ def find_min(nums):
 
     return min
 
-nums = input("Enter Numbers : ").split()
+nums = list(map(int, input("Enter Numbers : ").split()))
 result = find_min(nums)
 print(result)
