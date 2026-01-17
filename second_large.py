@@ -1,18 +1,25 @@
-def find_second_largest(numbers):
-    largest = None
-    second = None
+def find_second_largest(nums):
+    
+    if nums[0] > nums[1]:
+        large = nums[0]
+        second_large = nums[1]
 
-    for num in numbers:
-        if largest is None or num > largest:
-            if largest != num:
-                second = largest
-            largest = num
+    else:
+        large = nums[1]
+        second_large = nums[0]
 
-        elif num != largest and (second is None or num > second):
-            second = num
+    
+    for num in nums:
+        if num > large:
+            second_large = large
+            large = num
 
-    return second
+        elif num < large and num > second_large:
+            second_large = num
 
 
-numbers = [10, 5, 8, 20, 15]
-print(find_second_largest(numbers))
+    return large, second_large
+
+nums = [55, 22, 33, 11, 88, 66, 44]
+result = find_second_largest(nums)
+print(f"Second Large -- {result[1]}\nLarge -- {result[0]}")
