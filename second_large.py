@@ -9,7 +9,7 @@ def find_second_largest(nums):
         second_large = nums[0]
 
     
-    for num in nums:
+    for num in nums[2:]:
         if num > large:
             second_large = large
             large = num
