@@ -1,18 +1,18 @@
 def minimum_and_maximum_difference(nums):
 
-    max = nums [0]
-    min = nums [0]
+    max_val = nums [0]
+    min_val = nums [0]
 
     for num in nums:
-        if num > max:
-            max = num
+        if num > max_val:
+            max_val = num
 
-        elif num < min:
-            min = num
+        elif num < min_val:
+            min_val = num
 
-    diffrence = max - min
+    diffrence = max_val - min_val
 
-    return [min, max, diffrence]
+    return [min_val, max_val, diffrence]
 
 
 nums = list(map(int, input("Enter list of num --> (Space will separate integer) : ").split()))
