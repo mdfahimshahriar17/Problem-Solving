@@ -7,7 +7,6 @@ def count_frequency(numbers):
             freq[num] = 1        
         else:
             freq[num] += 1       
-    
     return freq
 
 
