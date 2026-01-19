@@ -15,6 +15,6 @@ def most_frequent_element(elements):
     return answer
 
 
-elements = [5, 5, 1, 1, 3]
+elements = [5, 2, 1, 3, 3]
 result = most_frequent_element(elements)
 print(result)
