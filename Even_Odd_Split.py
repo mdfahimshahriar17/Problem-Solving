@@ -20,6 +20,6 @@ def even_odd_split(nums):
 
 
 nums = list(range(1, 11))
-result = even_odd_split(nums)
+even_list, odd_list = even_odd_split(nums)
 
-print(f"Even --> {result[0]}\nOdd  --> {result[1]}")
+print(f"Even --> {even_list}\nOdd  --> {odd_list}")
