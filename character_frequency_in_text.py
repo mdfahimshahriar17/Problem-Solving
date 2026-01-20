@@ -1,7 +1,7 @@
 def character_frequency(text):
     freq = {}
 
-    for char in text.strip():
+    for char in text:
         if char == " ":
             continue
         if char not in freq:
