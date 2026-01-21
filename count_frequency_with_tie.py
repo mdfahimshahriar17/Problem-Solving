@@ -6,7 +6,7 @@ def count_frequency_with_tie(nums):
     high = None
 
 
-    for num in nums:
+    for num in int_list:
         if num not in freq:
             freq[num] = 1
 
