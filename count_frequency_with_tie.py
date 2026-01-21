@@ -14,7 +14,7 @@ def count_frequency_with_tie(nums):
             freq[num] += 1
 
 
-    for key, val in freq.values():
+    for key, val in freq.items():
         if high == None or val > high:
             most_freq.clear()
             most_freq.update({key, val})
@@ -22,14 +22,14 @@ def count_frequency_with_tie(nums):
     ans = most_freq
 
     tie = {}
-    for key, val in freq.values:
+    for key, val in freq.items():
         if val == most_freq.values():
             tie.update({key : val})
 
     
     if tie:
         lowest = None
-        for key, val in tie.values():
+        for key, val in tie.items():
             if lowest == None or key < lowest:
                 freq.clear()
                 freq[key] = val
