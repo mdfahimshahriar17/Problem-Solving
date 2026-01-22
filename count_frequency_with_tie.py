@@ -69,3 +69,6 @@ def count_frequency_with_tie(nums):
 
 
 
+nums = input("Space will separate the numbers:\n").split()
+result = count_frequency_with_tie(nums)
+print(result)
