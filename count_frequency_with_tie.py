@@ -46,3 +46,26 @@
 # result = count_frequency_with_tie(nums)
 # print(result)
 
+
+
+def count_frequency_with_tie(nums):
+    nums = list(map(int, nums))
+
+    freq = {}
+    for num in nums:
+        freq[num] = freq.get(num, 0) + 1
+
+    best_num = None
+    best_count = None
+
+    for num, count in freq.items():
+        if best_count is None or count > best_count:
+            best_count = count
+            best_num = num
+        elif count == best_count and num < best_num:
+            best_num = num
+
+    return best_num
+
+
+
