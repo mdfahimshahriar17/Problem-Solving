@@ -9,8 +9,13 @@ def even_and_odd_count(nums):
         if n%2 != 0:
             odd_count += 1
 
-    return even_count, odd_count
+    return f"{even_count} {odd_count}"
 
-n = list(map(int, input().split()))
-result = even_and_odd_count(nums=n)
+n = int(input())
+arr = []
+for _ in range(n):
+    nums = int(input())
+    arr.append(nums)
+
+result = even_and_odd_count(nums=arr)
 print(result)
