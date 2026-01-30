@@ -48,3 +48,37 @@ def second_large(nums):
 nums = list(map(int, input("Space will separate the number : ").split()))
 f_highest, s_highest = second_large(nums)
 print(f"Highest--{f_highest}\nSecond Highest--{s_highest}")
+
+
+
+
+
+def second_largest_number(nums):
+    largest = None
+    second_largest = None
+
+    if nums[0] > nums[1]:
+        largest = nums[0]
+        second_largest = nums[1]
+
+    else:
+        largest = nums[1]
+        second_largest = nums[0]
+
+    len_nums = len(nums)
+    if  len_nums>= 2:
+        for n in nums:
+            if n > largest:
+                second_largest = largest
+                largest = n
+
+            elif n < largest and n > second_largest:
+                second_largest = n
+
+    return second_largest
+
+
+num = int(input())                      
+n = list(map(int, input().split()))
+result = second_largest_number(nums=n)
+print(result)
