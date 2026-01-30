@@ -16,3 +16,14 @@ n = int(input("Enter N TO Get Sum From 'ZERO' : "))
 sum_result = sum(range(0, n+1)) # if we input 10 it will sum until 9
                                 # That why I used n+1 
 print(sum_result)
+
+
+
+
+num = int(input("Enter Number : "))
+
+total_sum = 0
+for n in range(1, num+1):
+    total_sum += n
+
+print(total_sum)
