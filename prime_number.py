@@ -50,3 +50,22 @@ def print_prime_upto(n):
 
 print_prime_upto(100)
 
+
+
+
+
+num = int(input("Enter number : "))
+if num < 2:
+    print("Not Prime")
+else:
+    for n in range(2, int(num ** 0.5) + 1):
+        if num%n == 0:
+            print("Not Prime")
+            break
+
+    else:
+        print("Prime")
+
+
+
+
